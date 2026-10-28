@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f766e">
+<meta name="description" content="سوقي - منصة تجريبية لربط التجار بالموردين في اليمن">
+<link rel="manifest" href="manifest.json">
+<title>سوقي | سوق التجار اليمني</title>
+<style>
+:root{--green:#0f766e;--green2:#115e59;--ink:#122326;--muted:#637477;--bg:#f3f7f6;--card:#fff;--line:#dce7e4;--gold:#eab308}
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink)}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{max-width:1100px;margin:auto;padding:0 14px 90px}.top{background:linear-gradient(130deg,#0f766e,#134e4a);color:white;padding:22px 18px 18px;border-radius:0 0 24px 24px;margin:0 -14px 16px}.nav{display:flex;align-items:center;justify-content:space-between;gap:10px}.brand{font-size:23px;font-weight:800;letter-spacing:-.5px}.tag{font-size:12px;opacity:.85;margin-top:3px}.pill{border:1px solid #ffffff66;background:#ffffff18;color:#fff;border-radius:999px;padding:8px 12px;font-size:12px}.hero{margin-top:23px}.hero h1{font-size:25px;line-height:1.5;margin:0 0 7px}.hero p{margin:0;color:#d9f4ee;font-size:14px;line-height:1.8}.searchrow{display:flex;gap:8px;margin-top:16px}.searchrow input{min-width:0;flex:1;border:0;border-radius:12px;padding:13px;background:white;color:var(--ink)}.primary{background:var(--green);color:white;border:0;border-radius:12px;padding:12px 15px;font-weight:700}.top .primary{background:#facc15;color:#263b38}.sectionhead{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:22px 0 12px}.sectionhead h2{font-size:18px;margin:0}.sub{font-size:12px;color:var(--muted)}.chips{display:flex;gap:8px;overflow:auto;padding-bottom:5px}.chip{white-space:nowrap;border:1px solid var(--line);background:white;border-radius:999px;padding:9px 13px;color:#37514f}.chip.active{background:#d9f4ee;border-color:#81c9bb;color:#075e55;font-weight:700}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:15px}.stat{background:#ffffff18;border:1px solid #ffffff2a;border-radius:14px;padding:11px}.stat b{display:block;font-size:19px}.stat span{font-size:11px;color:#d9f4ee}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:13px;min-width:0;box-shadow:0 4px 16px #163c3810}.product-icon{height:76px;border-radius:12px;background:linear-gradient(135deg,#e2f4ee,#f5f7d9);display:grid;place-items:center;font-size:37px;margin-bottom:11px}.product-title{font-weight:800;font-size:15px;line-height:1.5}.meta{font-size:12px;color:var(--muted);line-height:1.8;margin-top:4px}.price{font-size:17px;font-weight:800;color:var(--green2);margin-top:9px}.price small{font-size:11px;font-weight:400;color:var(--muted)}.card-actions{display:flex;gap:7px;margin-top:11px}.card-actions button{flex:1;padding:9px 7px;border-radius:10px;font-size:12px}.outline{border:1px solid #a9d6cd;background:#effaf7;color:#075e55}.supplier-row{display:flex;align-items:center;gap:11px}.avatar{width:44px;height:44px;border-radius:13px;background:#e0f2ee;display:grid;place-items:center;font-size:23px;flex-shrink:0}.supplier-name{font-weight:800}.verified{font-size:11px;color:#087f5b;margin-top:4px}.supplier-actions{margin-right:auto}.supplier-actions button{border:0;background:#e7f6f2;color:#075e55;border-radius:10px;padding:9px;font-size:12px}.panel{display:none;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;margin-top:15px}.panel.show{display:block}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.field{display:flex;flex-direction:column;gap:6px}.field label{font-size:12px;color:#526866}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:11px;background:#fbfdfc;color:var(--ink)}.field textarea{min-height:75px;resize:vertical}.full{grid-column:1/-1}.form-actions{display:flex;gap:8px;margin-top:13px}.secondary{background:#f0f5f4;color:#36514e;border:1px solid var(--line);border-radius:11px;padding:11px 14px}.notice{background:#fff7d6;border:1px solid #f2d46d;color:#6d5411;border-radius:12px;padding:12px;font-size:12px;line-height:1.8;margin-top:18px}.empty{grid-column:1/-1;text-align:center;padding:24px;color:var(--muted)}.bottom{position:fixed;bottom:0;left:0;right:0;background:#fffffff2;backdrop-filter:blur(12px);border-top:1px solid var(--line);display:flex;justify-content:center;z-index:5;padding:8px 8px calc(8px + env(safe-area-inset-bottom))}.bottom-inner{display:flex;width:min(700px,100%);justify-content:space-around;gap:6px}.tab{background:transparent;border:0;color:#657774;padding:8px 10px;border-radius:12px;font-size:12px}.tab.active{background:#dff5ef;color:#075e55;font-weight:800}.toast{position:fixed;top:18px;left:14px;right:14px;max-width:480px;margin:auto;background:#173d39;color:white;padding:13px 16px;border-radius:12px;z-index:20;display:none;box-shadow:0 8px 30px #0002}.toast.show{display:block}.modalback{position:fixed;inset:0;background:#102b29a8;z-index:10;display:none;align-items:flex-end;justify-content:center;padding:12px}.modalback.show{display:flex}.modal{background:white;border-radius:20px;padding:18px;width:min(600px,100%);max-height:85vh;overflow:auto}.modal h3{margin-top:0}.close{float:left;border:0;background:#edf4f2;border-radius:9px;padding:6px 10px}.request{border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:9px}.request b{display:block;margin-bottom:5px}
+@media(max-width:720px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.top{padding-top:18px}.hero h1{font-size:22px}}
+@media(max-width:380px){.grid{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.full{grid-column:auto}.stats{gap:6px}.stat b{font-size:16px}}
+</style>
+</head>
+<body>
+<div class="toast" id="toast" role="status"></div>
+<div class="app">
+<header class="top">
+ <div class="nav"><div><div class="brand">سوقي <span style="color:#facc15">●</span></div><div class="tag">سوق التجار والموردين في اليمن</div></div><button class="pill" id="roleBtn">وضع التاجر ▾</button></div>
+ <div class="hero"><h1>بضاعتك القادمة تبدأ من هنا.</h1><p>اكتشف المنتجات، قارن عروض الموردين، وأرسل طلب الشراء من مكان واحد.</p>
+ <div class="searchrow"><input id="search" placeholder="ابحث عن منتج أو مورد..." aria-label="البحث"><button class="primary" id="searchBtn">بحث</button></div></div>
+ <div class="stats"><div class="stat"><b id="productCount">6</b><span>منتجات تجريبية</span></div><div class="stat"><b id="supplierCount">4</b><span>موردون تجريبيون</span></div><div class="stat"><b id="requestCount">0</b><span>طلباتي على هذا الجهاز</span></div></div>
+</header>
+
+<section id="marketView">
+ <div class="sectionhead"><h2>تصفح حسب الفئة</h2><span class="sub">اختر فئة</span></div>
+ <div class="chips" id="categoryChips"></div>
+ <div class="sectionhead"><h2>منتجات وعروض</h2><span class="sub" id="resultLabel">عروض تجريبية</span></div>
+ <div class="grid" id="products"></div>
+ <div class="sectionhead"><h2>موردون مقترحون</h2><button class="secondary" id="allSuppliersBtn">عرض الكل</button></div>
+ <div class="grid" id="suppliers"></div>
+</section>
+
+<section id="requestsView" style="display:none">
+ <div class="sectionhead"><h2>طلبات الشراء</h2><button class="primary" id="newRequestBtn">+ طلب جديد</button></div>
+ <p class="sub">الطلبات محفوظة محليًا على هذا الجهاز في هذه النسخة التجريبية.</p>
+ <div id="requestsList"></div>
+</section>
+
+<section id="supplierView" style="display:none">
+ <div class="sectionhead"><h2>لوحة المورد التجريبية</h2><span class="sub">إضافة عرض إلى هذا الجهاز</span></div>
+ <div class="card">
+ <p style="margin-top:0;line-height:1.8">أضف منتجًا تجريبيًا لعرضه في السوق على هذا الجهاز. لن يراه المستخدمون الآخرون حتى نربط التطبيق بخادم مشترك.</p>
+ <form id="productForm">
+ <div class="formgrid">
+ <div class="field"><label>اسم المنتج</label><input name="name" required maxlength="70" placeholder="مثال: زيت نباتي 1 لتر"></div>
+ <div class="field"><label>الفئة</label><select name="category"><option>مواد غذائية</option><option>ملابس وأحذية</option><option>جوالات وإلكترونيات</option><option>مواد بناء</option><option>أدوات منزلية</option><option>مستلزمات أخرى</option></select></div>
+ <div class="field"><label>السعر</label><input name="price" type="number" min="0" step="any" required placeholder="السعر"></div>
+ <div class="field"><label>وحدة البيع</label><select name="unit"><option>للكرتون</option><option>للحبة</option><option>للكيس</option><option>للكيلو</option><option>للطقم</option><option>للجملة</option></select></div>
+ <div class="field"><label>المدينة</label><select name="city"><option>صنعاء</option><option>عدن</option><option>تعز</option><option>الحديدة</option><option>إب</option><option>مأرب</option><option>حضرموت</option><option>ذمار</option><option>أخرى</option></select></div>
+ <div class="field"><label>اسم المورد</label><input name="supplier" required maxlength="70" placeholder="اسم المتجر أو المورد"></div>
+ </div><div class="form-actions"><button class="primary" type="submit">إضافة المنتج</button><button class="secondary" type="reset">مسح</button></div>
+ </form></div>
+ <div class="sectionhead"><h2>عروضي المضافة</h2></div><div class="grid" id="myProducts"></div>
+</section>
+
+<section id="profileView" style="display:none">
+ <div class="sectionhead"><h2>حسابي التجريبي</h2></div>
+ <div class="card"><h3 style="margin-top:0">مرحبًا بك في سوقي</h3><p style="line-height:1.9;color:var(--muted)">هذه نسخة أولية لا تنشئ حسابًا حقيقيًا ولا تتحقق من هوية المورد. لا تدخل بيانات حساسة أو معلومات دفع.</p><div class="notice">قبل الإطلاق التجاري سنضيف تسجيل الدخول، والتحقق من الموردين، وسياسة الخصوصية، وشروط الاستخدام، ونظام الإبلاغ عن العروض غير الموثوقة.</div><div class="form-actions"><button class="secondary" id="exportBtn">تصدير بياناتي JSON</button><button class="secondary" id="resetBtn">إعادة بيانات التجربة</button></div></div>
+</section>
+</div>
+
+<nav class="bottom"><div class="bottom-inner">
+<button class="tab active" data-view="marketView">⌂ السوق</button><button class="tab" data-view="requestsView">▤ طلباتي</button><button class="tab" data-view="supplierView">＋ أضف عرضًا</button><button class="tab" data-view="profileView">◉ حسابي</button>
+</div></nav>
+
+<div class="modalback" id="modalback"><div class="modal"><button class="close" id="closeModal">إغلاق ✕</button><h3 id="modalTitle">إنشاء طلب شراء</h3><div id="modalBody"></div></div></div>
+
+<script>
+const seedProducts = [
+{id:1,name:"أرز بسمتي",category:"مواد غذائية",price:28500,unit:"للكيس 10 كجم",city:"صنعاء",supplier:"مؤسسة النور للتجارة",icon:"🌾",description:"عرض تجريبي. تحقق من السعر والتوفر قبل الشراء."},
+{id:2,name:"زيت نباتي",category:"مواد غذائية",price:42000,unit:"للكرتون",city:"عدن",supplier:"شركة الإمداد",icon:"🫙",description:"سعر تجريبي للكرتون، وليس عرضًا حقيقيًا."},
+{id:3,name:"أكواب ورقية",category:"أدوات منزلية",price:9500,unit:"للكرتون",city:"تعز",supplier:"مخازن التوفير",icon:"🥤",description:"تتوفر مقاسات مختلفة افتراضيًا لأغراض التجربة."},
+{id:4,name:"قمصان رجالية",category:"ملابس وأحذية",price:1800,unit:"للحبة",city:"صنعاء",supplier:"بيت الأناقة",icon:"👕",description:"السعر والكمية تجريبيان."},
+{id:5,name:"شواحن USB-C",category:"جوالات وإلكترونيات",price:2200,unit:"للحبة",city:"عدن",supplier:"مؤسسة النور للتجارة",icon:"🔌",description:"تحقق من الجودة والضمان قبل الطلب."},
+{id:6,name:"دهان أبيض",category:"مواد بناء",price:12500,unit:"للعبوة",city:"تعز",supplier:"مخازن التوفير",icon:"🪣",description:"عرض تجريبي غير مرتبط بمخزون فعلي."}
+];
+const categories=["الكل","مواد غذائية","ملابس وأحذية","جوالات وإلكترونيات","مواد بناء","أدوات منزلية","مستلزمات أخرى"];
+const icons={"مواد غذائية":"🛒","ملابس وأحذية":"👕","جوالات وإلكترونيات":"📱","مواد بناء":"🧱","أدوات منزلية":"🏠","مستلزمات أخرى":"📦"};
+let products,requests,activeCategory="الكل",activeView="marketView",role="تاجر",searchTerm="";
+const load=(key,fallback)=>{try{const x=localStorage.getItem(key);return x?JSON.parse(x):fallback}catch(e){return fallback}};
+products=load("souqi_products",seedProducts);
+requests=load("souqi_requests",[]);
+function save(){localStorage.setItem("souqi_products",JSON.stringify(products));localStorage.setItem("souqi_requests",JSON.stringify(requests));updateStats()}
+function money(n){return Number(n).toLocaleString("en-US")+" ر.ي."}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function toast(msg){const t=document.getElementById("toast");t.textContent=msg;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),2600)}
+function updateStats(){document.getElementById("productCount").textContent=products.length;document.getElementById("supplierCount").textContent=new Set(products.map(p=>p.supplier)).size;document.getElementById("requestCount").textContent=requests.length}
+function renderChips(){document.getElementById("categoryChips").innerHTML=categories.map(c=>`<button class="chip ${c===activeCategory?'active':''}" data-cat="${esc(c)}">${esc(c)}</button>`).join("");document.querySelectorAll("[data-cat]").forEach(b=>b.onclick=()=>{activeCategory=b.dataset.cat;renderChips();renderProducts()})}
+function filteredProducts(){return products.filter(p=>(activeCategory==="الكل"||p.category===activeCategory)&&(!searchTerm||(p.name+" "+p.supplier+" "+p.city+" "+p.category).toLowerCase().includes(searchTerm.toLowerCase())))}
+function productCard(p,own=false){return `<article class="card"><div class="product-icon">${p.icon||icons[p.category]||"📦"}</div><div class="product-title">${esc(p.name)}</div><div class="meta">${esc(p.category)} · ${esc(p.city)}<br>${esc(p.supplier)}</div><div class="price">${money(p.price)} <small>${esc(p.unit)}</small></div><div class="card-actions">${own?`<button class="outline" data-delete="${p.id}">حذف العرض</button>`:`<button class="primary" data-order="${p.id}">طلب سعر</button><button class="outline" data-details="${p.id}">التفاصيل</button>`}</div></article>`}
+function renderProducts(){const list=filteredProducts();document.getElementById("products").innerHTML=list.length?list.map(p=>productCard(p)).join():'<div class="empty">لا توجد نتائج. جرّب كلمة بحث أو فئة أخرى.</div>';document.getElementById("resultLabel").textContent=list.length+" منتج";document.querySelectorAll("[data-order]").forEach(b=>b.onclick=()=>openOrder(Number(b.dataset.order)));document.querySelectorAll("[data-details]").forEach(b=>b.onclick=()=>details(Number(b.dataset.details)))}
+function supplierData(){const m=new Map();products.forEach(p=>{if(!m.has(p.supplier))m.set(p.supplier,{name:p.supplier,city:p.city,count:0,cats:new Set()});const s=m.get(p.supplier);s.count++;s.cats.add(p.category)});return [...m.values()]}
+function renderSuppliers(){const ss=supplierData();document.getElementById("suppliers").innerHTML=ss.slice(0,4).map(s=>`<div class="card"><div class="supplier-row"><div class="avatar">🏪</div><div><div class="supplier-name">${esc(s.name)}</div><div class="meta">${esc(s.city)} · ${s.count} عروض</div><div class="verified">مورد تجريبي غير موثّق</div></div></div><div class="meta" style="margin-top:10px">${[...s.cats].map(esc).join("، ")}</div><div class="card-actions"><button class="outline" data-supplier="${esc(s.name)}">عرض منتجاته</button></div></div>`).join("");document.querySelectorAll("[data-supplier]").forEach(b=>b.onclick=()=>{searchTerm=b.dataset.supplier;document.getElementById("search").value=searchTerm;activeCategory="الكل";renderChips();renderProducts();showView("marketView")})}
+function renderRequests(){const el=document.getElementById("requestsList");el.innerHTML=requests.length?requests.slice().reverse().map(r=>`<div class="request"><b>${esc(r.product)}</b><div class="meta">المورد: ${esc(r.supplier)} · الكمية: ${esc(r.quantity)} · ${esc(r.city)}</div><div class="meta">تاريخ الطلب: ${esc(r.date)} · الحالة: ${esc(r.status)}</div>${r.note?`<div class="meta">ملاحظات: ${esc(r.note)}</div>`:""}</div>`).join(""):'<div class="card empty">لم تنشئ طلبات بعد. اختر منتجًا واضغط «طلب سعر».</div>'}
+function renderMyProducts(){const mine=products.filter(p=>p.userAdded);document.getElementById("myProducts").innerHTML=mine.length?mine.map(p=>productCard(p,true)).join(""):'<div class="card empty">لم تضف عروضًا على هذا الجهاز بعد.</div>';document.querySelectorAll("[data-delete]").forEach(b=>b.onclick=()=>{products=products.filter(p=>p.id!==Number(b.dataset.delete));save();renderAll();toast("تم حذف العرض من هذا الجهاز")})}
+function showView(id){activeView=id;["marketView","requestsView","supplierView","profileView"].forEach(v=>document.getElementById(v).style.display=v===id?"block":"none");document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active",b.dataset.view===id));if(id==="requestsView")renderRequests();if(id==="supplierView")renderMyProducts();window.scrollTo({top:0,behavior:"smooth"})}
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>showView(b.dataset.view));
+document.getElementById("searchBtn").onclick=()=>{searchTerm=document.getElementById("search").value.trim();renderProducts()};
+document.getElementById("search").addEventListener("keydown",e=>{if(e.key==="Enter"){searchTerm=e.target.value.trim();renderProducts()}});
+document.getElementById("allSuppliersBtn").onclick=()=>{const names=supplierData().map(s=>s.name);openModal("الموردون",names.length?names.map(n=>`<div class="request">${esc(n)}<div class="meta">مورد تجريبي غير موثق</div></div>`).join(""):"لا يوجد موردون")};
+document.getElementById("roleBtn").onclick=()=>{role=role==="تاجر"?"مورد":"تاجر";document.getElementById("roleBtn").textContent="وضع "+role+" ▾";toast("الوضع الحالي: "+role+" (تجريبي)");if(role==="مورد")showView("supplierView");else showView("marketView")};
+function openModal(title,body){document.getElementById("modalTitle").textContent=title;document.getElementById("modalBody").innerHTML=body;document.getElementById("modalback").classList.add("show")}
+function closeModal(){document.getElementById("modalback").classList.remove("show")}
+document.getElementById("closeModal").onclick=closeModal;document.getElementById("modalback").addEventListener("click",e=>{if(e.target.id==="modalback")closeModal()});
+function details(id){const p=products.find(x=>x.id===id);if(!p)return;openModal("تفاصيل العرض",`<div class="product-icon">${p.icon||"📦"}</div><h3>${esc(p.name)}</h3><p class="meta">${esc(p.description||"عرض تجريبي")}</p><p><b>السعر: ${money(p.price)} ${esc(p.unit)}</b></p><p>الفئة: ${esc(p.category)}<br>المدينة: ${esc(p.city)}<br>المورد: ${esc(p.supplier)}</p><div class="notice">هذا محتوى تجريبي. السعر والتوفر وهوية المورد غير متحقق منها.</div><button class="primary" style="width:100%;margin-top:12px" id="modalOrder">طلب سعر</button>`);document.getElementById("modalOrder").onclick=()=>{closeModal();openOrder(id)}}
+function openOrder(id){const p=products.find(x=>x.id===id);if(!p)return;openModal("إنشاء طلب شراء",`<form id="orderForm"><div class="field"><label>المنتج</label><input value="${esc(p.name)}" disabled></div><div class="formgrid" style="margin-top:10px"><div class="field"><label>الكمية المطلوبة</label><input name="quantity" required min="1" type="number" placeholder="الكمية"></div><div class="field"><label>مدينة الاستلام</label><select name="city"><option>صنعاء</option><option>عدن</option><option>تعز</option><option>الحديدة</option><option>إب</option><option>مأرب</option><option>حضرموت</option><option>أخرى</option></select></div><div class="field full"><label>ملاحظات (اختياري)</label><textarea name="note" maxlength="300" placeholder="المقاس، التغليف، موعد التسليم..."></textarea></div></div><p class="meta">لن يتم إرسال هذا الطلب للمورد في النسخة التجريبية؛ سيتم حفظه على جهازك فقط.</p><button class="primary" style="width:100%;margin-top:12px">حفظ الطلب التجريبي</button></form>`);document.getElementById("orderForm").onsubmit=e=>{e.preventDefault();const fd=new FormData(e.target);requests.push({id:Date.now(),product:p.name,supplier:p.supplier,quantity:fd.get("quantity"),city:fd.get("city"),note:fd.get("note"),date:new Date().toLocaleDateString("ar"),status:"محفوظ على الجهاز"});save();closeModal();renderRequests();toast("حُفظ الطلب على هذا الجهاز");showView("requestsView")}}
+document.getElementById("newRequestBtn").onclick=()=>{if(!products.length){toast("أضف منتجًا أولًا");return}openOrder(products[0].id)};
+document.getElementById("productForm").onsubmit=e=>{e.preventDefault();const fd=new FormData(e.target);const p={id:Date.now(),name:fd.get("name"),category:fd.get("category"),price:Number(fd.get("price")),unit:fd.get("unit"),city:fd.get("city"),supplier:fd.get("supplier"),icon:icons[fd.get("category")]||"📦",description:"أضيف محليًا من لوحة المورد التجريبية.",userAdded:true};products.unshift(p);save();e.target.reset();renderAll();renderMyProducts();toast("أُضيف المنتج إلى هذا الجهاز فقط");showView("marketView")};
+document.getElementById("exportBtn").onclick=()=>{const data=JSON.stringify({products,requests},null,2);const blob=new Blob([data],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="souqi-data.json";a.click();URL.revokeObjectURL(a.href);toast("بدأ تصدير بيانات التجربة")};
+document.getElementById("resetBtn").onclick=()=>{if(confirm("هل تريد إعادة بيانات التجربة وحذف الإضافات والطلبات المحلية؟")){products=seedProducts.map(p=>({...p}));requests=[];save();renderAll();renderRequests();renderMyProducts();toast("تمت إعادة بيانات التجربة")}};
+function renderAll(){renderChips();renderProducts();renderSuppliers();updateStats()}
+renderAll();
+if("serviceWorker" in navigator && location.protocol.startsWith("http")){navigator.serviceWorker.register("./sw.js").catch(()=>{})}
+</script>
+</body>
+</html>

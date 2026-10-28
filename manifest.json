@@ -1,0 +1,11 @@
+{
+  "name": "سوقي - سوق التجار اليمني",
+  "short_name": "سوقي",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f3f7f6",
+  "theme_color": "#0f766e",
+  "description": "نسخة تجريبية لربط التجار بالموردين"
+}
